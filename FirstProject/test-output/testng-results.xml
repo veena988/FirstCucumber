@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-21T19:11:11 IST" name="Default suite" finished-at="2024-09-21T19:11:40 IST" duration-ms="29788">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberTest.FirstProject.TestNGTestRunner@53045c6c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-09-21T19:11:11 IST" name="Default test" finished-at="2024-09-21T19:11:40 IST" duration-ms="29788">
+      <class name="CucumberTest.FirstProject.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CucumberTest.FirstProject.TestNGTestRunner@53045c6c]" started-at="2024-09-21T19:11:11 IST" name="setUpClass" finished-at="2024-09-21T19:11:11 IST" duration-ms="788" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6c806c8b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberTest.FirstProject.TestNGTestRunner@53045c6c]" started-at="2024-09-21T19:11:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-21T19:11:40 IST" duration-ms="28586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["In home page search item and increase quanity to 3 and addit to card and verify same in checkout page and check apply and proceed button is appearing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to card"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberTest.FirstProject.TestNGTestRunner@53045c6c]" started-at="2024-09-21T19:11:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-21T19:11:40 IST" duration-ms="28539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search product in home page and offer page and compare it"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search the product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberTest.FirstProject.TestNGTestRunner@53045c6c]" started-at="2024-09-21T19:11:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-21T19:11:39 IST" duration-ms="27582" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search product in home page and offer page and compare it"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search the product"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Beetroot] but found [No data]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Beetroot] but found [No data]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at stepDefiniation.OfferPageStepDefiniation.validate_both_product(OfferPageStepDefiniation.java:39)
+at ✽.validate both product(file:///C:/Users/vv2/eclipse-workspace/FirstProject/src/test/java/features/searchProduct.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberTest.FirstProject.TestNGTestRunner@53045c6c]" started-at="2024-09-21T19:11:40 IST" name="tearDownClass" finished-at="2024-09-21T19:11:40 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberTest.FirstProject.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
